@@ -1,0 +1,315 @@
+<html lang="en" vid="0"><head vid="1">
+    <meta charset="UTF-8" vid="2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" vid="3">
+    <title vid="4">Stephanie - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17" vid="5"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet" vid="6">
+    <style vid="7">
+        :root {
+            --bg-blue: #0044CC; 
+            --grid-color: rgba(255, 255, 255, 0.08);
+        }
+
+        body {
+            background-color: var(--bg-blue);
+            color: #ffffff;
+            font-family: 'Space Mono', monospace;
+            overflow: hidden; 
+        }
+
+        .font-serif-italic {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        
+        .bg-grid {
+            background-size: 60px 60px;
+            background-image: 
+                linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+                linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+            mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+            -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+        }
+
+        
+        @keyframes float-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes float-medium {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        @keyframes float-fast {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+        .animate-float-medium { animation: float-medium 5s ease-in-out infinite; }
+        .animate-float-fast { animation: float-fast 4s ease-in-out infinite; }
+        
+        
+        .delay-100 { animation-delay: 100ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-500 { animation-delay: 500ms; }
+        .delay-700 { animation-delay: 700ms; }
+        .delay-1000 { animation-delay: 1000ms; }
+
+        
+        .pixel-art {
+            image-rendering: pixelated;
+            shape-rendering: crispEdges;
+        }
+    </style>
+</head>
+<body class="h-screen w-full relative flex flex-col selection:bg-yellow-400 selection:text-blue-900" vid="8">
+
+    
+    <div class="absolute inset-0 z-0 bg-grid pointer-events-none" vid="9"></div>
+
+    
+    
+    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none" vid="10">
+        
+        
+        <div class="absolute top-[15%] left-[10%] w-8 h-8 animate-float-medium delay-100 opacity-90" vid="11">
+            
+            <svg viewBox="0 0 12 16" class="w-full h-full drop-shadow-lg pixel-art" vid="12">
+                <rect x="4" y="0" width="4" height="4" fill="#FF3333" vid="13"></rect> 
+                <rect x="4" y="8" width="4" height="4" fill="#FF3333" vid="14"></rect> 
+                <rect x="0" y="4" width="4" height="4" fill="#FF3333" vid="15"></rect> 
+                <rect x="8" y="4" width="4" height="4" fill="#FF3333" vid="16"></rect> 
+                <rect x="4" y="4" width="4" height="4" fill="#FFD700" vid="17"></rect> 
+                <rect x="4" y="12" width="4" height="4" fill="#228B22" vid="18"></rect> 
+            </svg>
+        </div>
+        
+        <div class="absolute top-[8%] left-[25%] w-6 h-6 animate-float-slow delay-500 opacity-80" vid="19">
+            
+            <svg viewBox="0 0 12 16" class="w-full h-full drop-shadow-lg pixel-art" vid="20">
+                <rect x="4" y="0" width="4" height="4" fill="#FFD700" vid="21"></rect>
+                <rect x="4" y="8" width="4" height="4" fill="#FFD700" vid="22"></rect>
+                <rect x="0" y="4" width="4" height="4" fill="#FFD700" vid="23"></rect>
+                <rect x="8" y="4" width="4" height="4" fill="#FFD700" vid="24"></rect>
+                <rect x="4" y="4" width="4" height="4" fill="#8B4513" vid="25"></rect>
+                <rect x="4" y="12" width="4" height="4" fill="#228B22" vid="26"></rect>
+            </svg>
+        </div>
+
+        
+        <div class="absolute top-[20%] right-[15%] w-10 h-10 animate-float-fast delay-300 opacity-85" vid="27">
+            
+            <svg viewBox="0 0 12 20" class="w-full h-full drop-shadow-lg pixel-art" vid="28">
+                <rect x="4" y="0" width="4" height="4" fill="#FF3333" vid="29"></rect>
+                <rect x="4" y="8" width="4" height="4" fill="#FF3333" vid="30"></rect>
+                <rect x="0" y="4" width="4" height="4" fill="#FF3333" vid="31"></rect>
+                <rect x="8" y="4" width="4" height="4" fill="#FF3333" vid="32"></rect>
+                <rect x="4" y="4" width="4" height="4" fill="#FFD700" vid="33"></rect>
+                <rect x="4" y="12" width="4" height="8" fill="#228B22" vid="34"></rect> 
+            </svg>
+        </div>
+
+        
+        <div class="absolute bottom-[20%] left-[8%] w-7 h-7 animate-float-slow delay-700 opacity-80" vid="35">
+            
+            <svg viewBox="0 0 12 16" class="w-full h-full drop-shadow-lg pixel-art" vid="36">
+                <rect x="4" y="0" width="4" height="4" fill="#FFD700" vid="37"></rect>
+                <rect x="4" y="8" width="4" height="4" fill="#FFD700" vid="38"></rect>
+                <rect x="0" y="4" width="4" height="4" fill="#FFD700" vid="39"></rect>
+                <rect x="8" y="4" width="4" height="4" fill="#FFD700" vid="40"></rect>
+                <rect x="4" y="4" width="4" height="4" fill="#8B4513" vid="41"></rect>
+                <rect x="4" y="12" width="4" height="4" fill="#228B22" vid="42"></rect>
+            </svg>
+        </div>
+
+        
+        <div class="absolute bottom-[25%] right-[20%] w-9 h-9 animate-float-medium delay-1000 opacity-90" vid="43">
+             
+            <svg viewBox="0 0 12 20" class="w-full h-full drop-shadow-lg pixel-art" vid="44">
+                <rect x="4" y="0" width="4" height="4" fill="#FF3333" vid="45"></rect>
+                <rect x="4" y="8" width="4" height="4" fill="#FF3333" vid="46"></rect>
+                <rect x="0" y="4" width="4" height="4" fill="#FF3333" vid="47"></rect>
+                <rect x="8" y="4" width="4" height="4" fill="#FF3333" vid="48"></rect>
+                <rect x="4" y="4" width="4" height="4" fill="#FFD700" vid="49"></rect>
+                <rect x="4" y="12" width="4" height="8" fill="#228B22" vid="50"></rect>
+                <rect x="8" y="14" width="2" height="2" fill="#228B22" vid="51"></rect> 
+            </svg>
+        </div>
+        
+        
+        <div class="absolute top-[40%] left-[10%] w-4 h-4 animate-float-slow opacity-60" vid="52">
+             <svg viewBox="0 0 12 16" class="w-full h-full drop-shadow-lg pixel-art" vid="53">
+                <rect x="4" y="0" width="4" height="4" fill="#FFD700" vid="54"></rect>
+                <rect x="4" y="8" width="4" height="4" fill="#FFD700" vid="55"></rect>
+                <rect x="0" y="4" width="4" height="4" fill="#FFD700" vid="56"></rect>
+                <rect x="8" y="4" width="4" height="4" fill="#FFD700" vid="57"></rect>
+                <rect x="4" y="4" width="4" height="4" fill="#8B4513" vid="58"></rect>
+                <rect x="4" y="12" width="4" height="4" fill="#228B22" vid="59"></rect>
+            </svg>
+        </div>
+
+        <div class="absolute top-[60%] right-[8%] w-5 h-5 animate-float-slow delay-200 opacity-70" vid="60">
+             <svg viewBox="0 0 12 16" class="w-full h-full drop-shadow-lg pixel-art" vid="61">
+                <rect x="4" y="0" width="4" height="4" fill="#FF3333" vid="62"></rect>
+                <rect x="4" y="8" width="4" height="4" fill="#FF3333" vid="63"></rect>
+                <rect x="0" y="4" width="4" height="4" fill="#FF3333" vid="64"></rect>
+                <rect x="8" y="4" width="4" height="4" fill="#FF3333" vid="65"></rect>
+                <rect x="4" y="4" width="4" height="4" fill="#FFD700" vid="66"></rect>
+                <rect x="4" y="12" width="4" height="4" fill="#228B22" vid="67"></rect>
+            </svg>
+        </div>
+
+    </div>
+
+    
+    <nav class="relative z-50 w-full px-6 py-8 md:px-12 flex justify-between items-center" vid="68">
+        
+        <div class="hidden md:block" vid="69">
+            <span class="text-xs uppercase tracking-[0.2em] opacity-70" vid="70">Portfolio 2024</span>
+        </div>
+
+        
+        <div class="flex-1 flex justify-center items-center gap-6 md:gap-12 text-sm md:text-base font-bold tracking-wide" vid="71">
+            <div class="group relative py-1" vid="72">
+                <a href="#" class="flex items-center gap-1" vid="73">
+                    <span class="relative z-10 group-hover:text-yellow-300 transition-colors duration-300" vid="74">WORKS</span>
+                    <span class="text-xs group-hover:text-yellow-300 transition-colors duration-300" vid="75">▼</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-300 group-hover:w-full transition-all duration-300" vid="76"></span>
+                </a>
+                <div class="absolute top-full left-0 mt-2 bg-[#003399] border border-white/10 rounded-sm shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[200px]" vid="77">
+                    <a href="#" class="block px-5 py-3 hover:bg-yellow-300 hover:text-blue-900 transition-colors text-sm font-bold" vid="78">ALL</a>
+                    <a href="#" class="block px-5 py-3 hover:bg-yellow-300 hover:text-blue-900 transition-colors text-sm font-bold" vid="79">DIGITAL ILLUSTRATION</a>
+                    <a href="#" class="block px-5 py-3 hover:bg-yellow-300 hover:text-blue-900 transition-colors text-sm font-bold" vid="80">3D/GAME ASSETS</a>
+                    <a href="#" class="block px-5 py-3 hover:bg-yellow-300 hover:text-blue-900 transition-colors text-sm font-bold" vid="81">MOTION</a>
+                </div>
+            </div>
+            <a href="#" class="group relative py-1" vid="82">
+                <span class="relative z-10 group-hover:text-yellow-300 transition-colors duration-300" vid="83">ABOUT</span>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-300 group-hover:w-full transition-all duration-300" vid="84"></span>
+            </a>
+            <a href="#" class="group relative py-1" vid="85">
+                <span class="relative z-10 group-hover:text-yellow-300 transition-colors duration-300" vid="86">CONTACT</span>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-300 group-hover:w-full transition-all duration-300" vid="87"></span>
+            </a>
+        </div>
+
+        
+        <div class="hidden md:flex gap-4 opacity-70" vid="88">
+            <a href="#" class="hover:text-yellow-300 transition-colors" vid="89">IG</a>
+            <a href="#" class="hover:text-yellow-300 transition-colors" vid="90">LI</a>
+            <a href="#" class="hover:text-yellow-300 transition-colors" vid="91">TW</a>
+        </div>
+    </nav>
+
+    
+    <main class="flex-grow flex flex-col items-center justify-center relative z-20 pb-20" vid="92">
+        
+        
+        <div class="relative group cursor-default" vid="93">
+            <h1 class="font-serif-italic text-[15vw] md:text-[16vw] leading-none text-white tracking-tighter flex items-end select-none drop-shadow-2xl" vid="94">
+                <span vid="95">stephan</span>
+                
+                
+                <div class="relative flex flex-col justify-end items-center mx-[0.5vw] w-[4vw] h-[15vw]" vid="96">
+                    
+                    
+                    <svg viewBox="0 0 24 60" class="w-full h-full pixel-art overflow-visible" preserveAspectRatio="xMidYMax" vid="97">
+                        
+                        
+                        <rect x="10" y="24" width="4" height="36" fill="#008000" vid="98"></rect> 
+                        
+                        
+                        
+                        <rect x="6" y="44" width="4" height="4" fill="#006400" vid="99"></rect>
+                        <rect x="2" y="40" width="4" height="4" fill="#006400" vid="100"></rect>
+                        
+                        
+                        <rect x="14" y="36" width="4" height="4" fill="#006400" vid="101"></rect>
+                        <rect x="18" y="32" width="4" height="4" fill="#006400" vid="102"></rect>
+                        
+                        
+                        
+                        <rect x="8" y="8" width="8" height="8" fill="#5C3317" vid="103"></rect> 
+                        
+                        
+                        
+                        <rect x="8" y="0" width="8" height="8" fill="#FFD700" vid="104"></rect>
+                        
+                        <rect x="8" y="16" width="8" height="8" fill="#FFD700" vid="105"></rect>
+                        
+                        <rect x="0" y="8" width="8" height="8" fill="#FFD700" vid="106"></rect>
+                        
+                        <rect x="16" y="8" width="8" height="8" fill="#FFD700" vid="107"></rect>
+                        
+                        
+                        <rect x="4" y="4" width="4" height="4" fill="#FFD700" opacity="0.8" vid="108"></rect>
+                        <rect x="16" y="4" width="4" height="4" fill="#FFD700" opacity="0.8" vid="109"></rect>
+                        <rect x="4" y="16" width="4" height="4" fill="#FFD700" opacity="0.8" vid="110"></rect>
+                        <rect x="16" y="16" width="4" height="4" fill="#FFD700" opacity="0.8" vid="111"></rect>
+                        
+                    </svg>
+                </div>
+                <span vid="112">e</span>
+            </h1>
+
+            
+            <div class="absolute -top-8 left-4 md:left-12 text-xs md:text-sm font-bold tracking-widest opacity-0 animate-[fadeIn_1s_ease-out_1s_forwards]" vid="113">
+                CREATIVE DEVELOPER
+            </div>
+            
+            <div class="absolute -bottom-4 right-4 md:right-12 text-xs md:text-sm font-bold tracking-widest opacity-0 animate-[fadeIn_1s_ease-out_1.5s_forwards]" vid="114">
+                BASED IN PARIS
+            </div>
+        </div>
+
+    </main>
+
+    
+    <footer class="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end z-30 text-xs font-bold tracking-wider opacity-60" vid="115">
+        <div class="flex flex-col gap-2" vid="116">
+            <span vid="117">AVAILABLE FOR FREELANCE</span>
+            <span vid="118">JUL 2024</span>
+        </div>
+        
+        <div class="animate-bounce mb-2" vid="119">
+            ↓ SCROLL
+        </div>
+        
+        <div class="text-right flex flex-col gap-2" vid="120">
+            <span vid="121">© 2024 STEPHANIE</span>
+            <span vid="122">ALL RIGHTS RESERVED</span>
+        </div>
+    </footer>
+
+    
+    <style vid="123">
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 0.8; transform: translateY(0); }
+        }
+    </style>
+
+    <script vid="124">
+        
+        const flowerContainer = document.querySelector('main');
+        const flower = document.querySelector('main svg');
+        
+        document.addEventListener('mousemove', (e) => {
+            const x = (window.innerWidth / 2 - e.pageX) / 50;
+            const y = (window.innerHeight / 2 - e.pageY) / 50;
+            
+            
+            const bgFlowers = document.querySelectorAll('.absolute.inset-0 > div');
+            bgFlowers.forEach((f, index) => {
+                const speed = (index + 1) * 0.5;
+                f.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
+
+</body></html>
