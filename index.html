@@ -7,8 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Changed base blue to a slightly softer/darker hue to fit an artist vibe, 
-               but kept the core aesthetic */
             --bg-blue: #1a1b4b; 
             --grid-color: rgba(255, 255, 255, 0.08);
             --accent-yellow: #FFD700;
@@ -87,62 +85,79 @@
     <!-- Background Grid -->
     <div class="fixed inset-0 z-0 bg-grid pointer-events-none"></div>
 
-    <!-- Background Floating Pixels -->
+    <!-- Background Floating Pixels (Now Snails!) -->
     <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
         
-        <div class="absolute top-[10%] left-[5%] w-8 h-8 animate-float-medium delay-100 opacity-90">
-            <svg viewBox="0 0 12 16" class="w-full h-full drop-shadow-lg pixel-art">
-                <rect x="4" y="0" width="4" height="4" fill="#FF3333"></rect> 
-                <rect x="4" y="8" width="4" height="4" fill="#FF3333"></rect> 
-                <rect x="0" y="4" width="4" height="4" fill="#FF3333"></rect> 
-                <rect x="8" y="4" width="4" height="4" fill="#FF3333"></rect> 
-                <rect x="4" y="4" width="4" height="4" fill="#FFD700"></rect> 
-                <rect x="4" y="12" width="4" height="4" fill="#228B22"></rect> 
+        <!-- Snail 1: Top Left (Red/Pink) -->
+        <div class="absolute top-[10%] left-[5%] w-10 h-10 animate-float-medium delay-100 opacity-90">
+            <svg viewBox="0 0 16 16" class="w-full h-full drop-shadow-lg pixel-art">
+                <!-- Body -->
+                <rect x="2" y="11" width="12" height="4" fill="#FFB6C1"></rect>
+                <rect x="12" y="9" width="2" height="2" fill="#FFB6C1"></rect>
+                <!-- Eyes -->
+                <rect x="13" y="6" width="1" height="3" fill="#FFB6C1"></rect>
+                <rect x="11" y="7" width="1" height="2" fill="#FFB6C1"></rect>
+                <!-- Shell -->
+                <rect x="4" y="6" width="7" height="6" fill="#FF3333"></rect>
+                <rect x="6" y="8" width="3" height="2" fill="#990000"></rect>
             </svg>
         </div>
         
-        <div class="absolute top-[15%] right-[10%] w-6 h-6 animate-float-slow delay-500 opacity-80">
-            <svg viewBox="0 0 12 16" class="w-full h-full drop-shadow-lg pixel-art">
-                <rect x="4" y="0" width="4" height="4" fill="#FFD700"></rect>
-                <rect x="4" y="8" width="4" height="4" fill="#FFD700"></rect>
-                <rect x="0" y="4" width="4" height="4" fill="#FFD700"></rect>
-                <rect x="8" y="4" width="4" height="4" fill="#FFD700"></rect>
-                <rect x="4" y="4" width="4" height="4" fill="#8B4513"></rect>
-                <rect x="4" y="12" width="4" height="4" fill="#228B22"></rect>
+        <!-- Snail 2: Top Right (Gold/Brown) -->
+        <div class="absolute top-[15%] right-[10%] w-8 h-8 animate-float-slow delay-500 opacity-80">
+            <svg viewBox="0 0 16 16" class="w-full h-full drop-shadow-lg pixel-art">
+                <!-- Body -->
+                <rect x="1" y="12" width="13" height="3" fill="#F0E68C"></rect>
+                <rect x="11" y="10" width="3" height="2" fill="#F0E68C"></rect>
+                <!-- Eyes -->
+                <rect x="11" y="7" width="1" height="3" fill="#F0E68C"></rect>
+                <rect x="13" y="6" width="1" height="4" fill="#F0E68C"></rect>
+                <!-- Shell -->
+                <rect x="3" y="5" width="7" height="7" fill="#DAA520"></rect>
+                <rect x="5" y="7" width="3" height="3" fill="#8B4513"></rect>
             </svg>
         </div>
 
-        <div class="absolute top-[45%] left-[8%] w-10 h-10 animate-float-fast delay-300 opacity-85">
-            <svg viewBox="0 0 12 20" class="w-full h-full drop-shadow-lg pixel-art">
-                <rect x="4" y="0" width="4" height="4" fill="#FF3333"></rect>
-                <rect x="4" y="8" width="4" height="4" fill="#FF3333"></rect>
-                <rect x="0" y="4" width="4" height="4" fill="#FF3333"></rect>
-                <rect x="8" y="4" width="4" height="4" fill="#FF3333"></rect>
-                <rect x="4" y="4" width="4" height="4" fill="#FFD700"></rect>
-                <rect x="4" y="12" width="4" height="8" fill="#228B22"></rect> 
+        <!-- Snail 3: Mid Left (Green/Blue) -->
+        <div class="absolute top-[45%] left-[8%] w-12 h-12 animate-float-fast delay-300 opacity-85">
+            <svg viewBox="0 0 16 16" class="w-full h-full drop-shadow-lg pixel-art">
+                <!-- Body -->
+                <rect x="3" y="12" width="11" height="3" fill="#90EE90"></rect>
+                <rect x="12" y="10" width="2" height="2" fill="#90EE90"></rect>
+                <!-- Eyes -->
+                <rect x="12" y="7" width="1" height="3" fill="#90EE90"></rect>
+                <rect x="14" y="8" width="1" height="2" fill="#90EE90"></rect>
+                <!-- Shell -->
+                <rect x="5" y="6" width="6" height="6" fill="#4169E1"></rect>
+                <rect x="7" y="8" width="2" height="2" fill="#E0FFFF"></rect>
             </svg>
         </div>
 
-        <div class="absolute bottom-[15%] right-[15%] w-7 h-7 animate-float-slow delay-700 opacity-80">
-            <svg viewBox="0 0 12 16" class="w-full h-full drop-shadow-lg pixel-art">
-                <rect x="4" y="0" width="4" height="4" fill="#FFD700"></rect>
-                <rect x="4" y="8" width="4" height="4" fill="#FFD700"></rect>
-                <rect x="0" y="4" width="4" height="4" fill="#FFD700"></rect>
-                <rect x="8" y="4" width="4" height="4" fill="#FFD700"></rect>
-                <rect x="4" y="4" width="4" height="4" fill="#8B4513"></rect>
-                <rect x="4" y="12" width="4" height="4" fill="#228B22"></rect>
+        <!-- Snail 4: Bottom Right (Purple/Orange) -->
+        <div class="absolute bottom-[15%] right-[15%] w-9 h-9 animate-float-slow delay-700 opacity-80">
+            <svg viewBox="0 0 16 16" class="w-full h-full drop-shadow-lg pixel-art">
+                <!-- Body -->
+                <rect x="2" y="11" width="12" height="4" fill="#E6E6FA"></rect>
+                <!-- Eyes -->
+                <rect x="11" y="7" width="1" height="4" fill="#E6E6FA"></rect>
+                <rect x="13" y="7" width="1" height="4" fill="#E6E6FA"></rect>
+                <!-- Shell -->
+                <rect x="4" y="6" width="7" height="6" fill="#9370DB"></rect>
+                <rect x="6" y="8" width="3" height="2" fill="#4B0082"></rect>
             </svg>
         </div>
 
-        <div class="absolute bottom-[20%] left-[20%] w-9 h-9 animate-float-medium delay-1000 opacity-90">
-            <svg viewBox="0 0 12 20" class="w-full h-full drop-shadow-lg pixel-art">
-                <rect x="4" y="0" width="4" height="4" fill="#FF3333"></rect>
-                <rect x="4" y="8" width="4" height="4" fill="#FF3333"></rect>
-                <rect x="0" y="4" width="4" height="4" fill="#FF3333"></rect>
-                <rect x="8" y="4" width="4" height="4" fill="#FF3333"></rect>
-                <rect x="4" y="4" width="4" height="4" fill="#FFD700"></rect>
-                <rect x="4" y="12" width="4" height="8" fill="#228B22"></rect>
-                <rect x="8" y="14" width="2" height="2" fill="#228B22"></rect> 
+        <!-- Snail 5: Bottom Left (Teal/Pink) -->
+        <div class="absolute bottom-[20%] left-[20%] w-11 h-11 animate-float-medium delay-1000 opacity-90">
+            <svg viewBox="0 0 16 16" class="w-full h-full drop-shadow-lg pixel-art">
+                <!-- Body -->
+                <rect x="1" y="12" width="14" height="3" fill="#FFE4E1"></rect>
+                <!-- Eyes -->
+                <rect x="12" y="8" width="1" height="4" fill="#FFE4E1"></rect>
+                <rect x="14" y="7" width="1" height="5" fill="#FFE4E1"></rect>
+                <!-- Shell -->
+                <rect x="4" y="5" width="8" height="7" fill="#20B2AA"></rect>
+                <rect x="6" y="7" width="4" height="3" fill="#008080"></rect>
             </svg>
         </div>
     </div>
@@ -153,7 +168,6 @@
             <span class="text-xs uppercase tracking-[0.2em] opacity-70">ART PORTFOLIO</span>
         </div>
         <div class="flex gap-4 opacity-70 text-xs tracking-widest">
-            <!-- Removed Paris, made it generic for an online artist -->
             <span>ONLINE / GLOBAL</span>
         </div>
     </nav>
@@ -164,23 +178,32 @@
         <!-- Header Section -->
         <div class="text-center mb-10 animate-[fadeIn_1s_ease-out_forwards]">
             
-            <div class="w-20 h-20 mx-auto mb-6 relative group">
+            <!-- Main Logo: The Boss Snail -->
+            <div class="w-24 h-24 mx-auto mb-6 relative group">
                 <div class="absolute inset-0 bg-yellow-400 rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
-                <svg viewBox="0 0 24 60" class="w-full h-full pixel-art overflow-visible drop-shadow-2xl transform group-hover:scale-110 transition-transform duration-300" preserveAspectRatio="xMidYMax">
-                    <rect x="10" y="24" width="4" height="36" fill="#008000"></rect> 
-                    <rect x="6" y="44" width="4" height="4" fill="#006400"></rect>
-                    <rect x="2" y="40" width="4" height="4" fill="#006400"></rect>
-                    <rect x="14" y="36" width="4" height="4" fill="#006400"></rect>
-                    <rect x="18" y="32" width="4" height="4" fill="#006400"></rect>
-                    <rect x="8" y="8" width="8" height="8" fill="#5C3317"></rect> 
-                    <rect x="8" y="0" width="8" height="8" fill="#FFD700"></rect>
-                    <rect x="8" y="16" width="8" height="8" fill="#FFD700"></rect>
-                    <rect x="0" y="8" width="8" height="8" fill="#FFD700"></rect>
-                    <rect x="16" y="8" width="8" height="8" fill="#FFD700"></rect>
-                    <rect x="4" y="4" width="4" height="4" fill="#FFD700" opacity="0.8"></rect>
-                    <rect x="16" y="4" width="4" height="4" fill="#FFD700" opacity="0.8"></rect>
-                    <rect x="4" y="16" width="4" height="4" fill="#FFD700" opacity="0.8"></rect>
-                    <rect x="16" y="16" width="4" height="4" fill="#FFD700" opacity="0.8"></rect>
+                <svg viewBox="0 0 32 32" class="w-full h-full pixel-art overflow-visible drop-shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
+                    <!-- Snail Body -->
+                    <rect x="2" y="24" width="28" height="6" fill="#FDE047"></rect> <!-- Bright Yellow Body -->
+                    <rect x="24" y="20" width="6" height="4" fill="#FDE047"></rect> <!-- Head -->
+                    
+                    <!-- Eye Stalks -->
+                    <rect x="24" y="14" width="2" height="6" fill="#FDE047"></rect>
+                    <rect x="28" y="14" width="2" height="6" fill="#FDE047"></rect>
+                    
+                    <!-- Eyes -->
+                    <rect x="24" y="12" width="2" height="2" fill="#000000"></rect>
+                    <rect x="28" y="12" width="2" height="2" fill="#000000"></rect>
+                    
+                    <!-- Shell Main -->
+                    <rect x="4" y="10" width="18" height="16" fill="#F97316"></rect> <!-- Orange Shell -->
+                    
+                    <!-- Shell Spiral Detail -->
+                    <rect x="8" y="14" width="10" height="8" fill="#C2410C"></rect> <!-- Dark Orange -->
+                    <rect x="12" y="16" width="2" height="4" fill="#FFD700"></rect> <!-- Gold Center -->
+                    
+                    <!-- Shine -->
+                    <rect x="6" y="12" width="2" height="2" fill="#FFFFFF" opacity="0.6"></rect>
+                    <rect x="25" y="25" width="1" height="1" fill="#D97706"></rect> <!-- Cheek -->
                 </svg>
             </div>
 
@@ -201,7 +224,6 @@
             <!-- KO-FI (Support) -->
             <a href="https://ko-fi.com/fuainc" target="_blank" class="link-card relative group w-full bg-[#FF5E5B]/20 border-2 border-[#FF5E5B] hover:border-yellow-400 p-4 flex items-center justify-between backdrop-blur-sm">
                 <div class="flex items-center gap-4">
-                    <!-- Heart Icon -->
                     <svg class="w-6 h-6 text-[#FF5E5B] group-hover:text-blue-900" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                     <div class="flex flex-col text-left">
                         <span class="font-bold tracking-wide">SUPPORT ON KO-FI</span>
@@ -216,7 +238,6 @@
             <!-- PIXIV (Portfolio) -->
             <a href="https://www.pixiv.net/en/users/104277436" target="_blank" class="link-card w-full border border-white/20 hover:border-yellow-400 bg-white/5 p-4 flex items-center justify-between backdrop-blur-sm">
                 <div class="flex items-center gap-4">
-                    <!-- Generic 'P' style icon for Pixiv -->
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-2h2v2zm2.5-4.5c0 .83-.67 1.5-1.5 1.5h-1v1H9v-2.5c0-.83.67-1.5 1.5-1.5h1v-1h-1v-1.5h2.5v3.5z"/></svg>
                     <span class="font-bold tracking-wide">PIXIV GALLERY</span>
                 </div>
@@ -225,7 +246,6 @@
 
             <!-- Grid: Twitter Accounts -->
             <div class="grid grid-cols-2 gap-4 w-full">
-                <!-- Main Account -->
                 <a href="https://x.com/Death_X13_" target="_blank" class="link-card border border-white/20 hover:border-yellow-400 bg-white/5 p-4 flex flex-col items-center justify-center gap-2 backdrop-blur-sm h-32 text-center">
                     <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
                     <div class="flex flex-col">
@@ -234,7 +254,6 @@
                     </div>
                 </a>
                 
-                <!-- Art Account -->
                 <a href="https://x.com/FuaArtOfficial" target="_blank" class="link-card border border-white/20 hover:border-yellow-400 bg-white/5 p-4 flex flex-col items-center justify-center gap-2 backdrop-blur-sm h-32 text-center">
                     <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
                     <div class="flex flex-col">
@@ -246,16 +265,12 @@
 
             <!-- Grid: Bluesky & Misskey -->
             <div class="grid grid-cols-2 gap-4 w-full">
-                <!-- Bluesky -->
                 <a href="https://bsky.app/profile/hachikuji.bsky.social" target="_blank" class="link-card border border-white/20 hover:border-yellow-400 bg-white/5 p-4 flex flex-col items-center justify-center gap-2 backdrop-blur-sm h-32">
-                    <!-- Butterfly/Cloud like shape for Bluesky -->
                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" opacity="0.5"/></svg>
                     <span class="font-bold text-sm">BLUESKY</span>
                 </a>
 
-                <!-- Misskey -->
                 <a href="https://misskey.io/@Hachikuji" target="_blank" class="link-card border border-white/20 hover:border-yellow-400 bg-white/5 p-4 flex flex-col items-center justify-center gap-2 backdrop-blur-sm h-32">
-                    <!-- Asterisk/Planet shape for Misskey/Fediverse -->
                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L9.1 8.5 2 9.1l5.5 4.8L6.1 21 12 17.5 17.9 21l-1.4-7.1L22 9.1l-7.1-.6L12 2z"/></svg>
                     <span class="font-bold text-sm">MISSKEY</span>
                 </a>
@@ -292,13 +307,12 @@
     </style>
 
     <script>
-        // Subtle Parallax Effect for Background Elements
         document.addEventListener('mousemove', (e) => {
             const x = (window.innerWidth / 2 - e.pageX) / 40;
             const y = (window.innerHeight / 2 - e.pageY) / 40;
             
-            const bgFlowers = document.querySelectorAll('.fixed.inset-0 > div');
-            bgFlowers.forEach((f, index) => {
+            const bgElements = document.querySelectorAll('.fixed.inset-0 > div');
+            bgElements.forEach((f, index) => {
                 const speed = (index + 1) * 0.3;
                 f.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
             });
